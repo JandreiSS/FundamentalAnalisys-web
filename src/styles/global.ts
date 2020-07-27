@@ -4,19 +4,24 @@ export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     outline: 0;
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
   }
 
   body {
-    background: #061E36;
-    color: #FFF;
-    -webkit-font-smoothing: antialiased;
+  background: ${props => props.theme.colors.background};
+
+    color: ${props => props.theme.colors.text};
+    -webkit-font-smoothing: antialiased !important;
   }
 
   body, input, button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
   }
 
   h1, h2, h3, h4, h5, h6, strong {
@@ -25,5 +30,9 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
   }
 `

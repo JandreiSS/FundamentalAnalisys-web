@@ -10,7 +10,7 @@ export const Container = styled.div`
   display: flex;
   align-items: stretch;
 
-  background-color: #061E36;
+  background-color: #030E1A;
   box-sizing: border-box;
 `;
 
@@ -87,7 +87,6 @@ export const Content = styled.div`
   }
 
   > a {
-    /* color: #ff9000; */
     color: #e5e5e5;
 
     display: block;
@@ -112,5 +111,5 @@ export const Background = styled.div`
   flex: 1;
   background: url(${signInBackgroundImg}) no-repeat center;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.2;
 `;
