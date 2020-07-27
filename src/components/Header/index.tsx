@@ -15,7 +15,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <Container>
       {/* logotipo */}
-      <h1>Fundamental Analisys</h1>
+      Fundamental Analisys
 
       {/* Theme Switcher */}
       <Switch
