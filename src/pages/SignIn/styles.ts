@@ -11,7 +11,6 @@ export const Container = styled.div`
   align-items: stretch;
 
   background-color: #030E1A;
-  box-sizing: border-box;
 `;
 
 
@@ -26,12 +25,17 @@ export const Content = styled.div`
   width: 100%;
   max-width: 500px;
 
+  img {
+    height: 200px;
+    width: auto;
+  }
+
   form {
-    margin: 70px;
+    margin: 40px 0 70px 0;
     width: 340px;
     text-align: center;
 
-    > h1 {
+    h1 {
       margin-bottom: 24px;
       color: #e5e5e5;
     }
@@ -86,6 +90,7 @@ export const Content = styled.div`
     }
   }
 
+  /* Criar conta */
   > a {
     color: #e5e5e5;
 

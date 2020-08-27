@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDrag } from 'react-dnd';
 
-import { Container, Label, Header, Content } from './styles';
+import { Container, Button, Content } from './styles';
 
 const Card: React.FC = () => {
   const [{ isDragging }, dragRef] = useDrag({
@@ -12,25 +12,37 @@ const Card: React.FC = () => {
   });
 
   return (
-    <li>
-      <Container ref={dragRef} >
-        <Header>
-          <h1>WEGE3</h1>
-        </Header>
+    <Container ref={dragRef} >
+      <h1>WEGE3</h1>
 
-        <Label color="#123123">Máquinas e Equipamentos</Label>
-        <Label color="#123789">Motores, Compressores</Label>
+      <Button >Máquinas e Equipamentos</Button>
+      <Button >Motores, Compressores e Outros</Button>
 
-        <Content>
-          <h2>Cotação</h2>
-          <p>P/L</p>
-          <p>D.YIELD</p>
-          <p>EBITDA</p>
-          <p>ROE</p>
-          <p>EV/EBIT</p>
-        </Content>
-      </Container>
-    </li>
+      <h2>Cotação</h2>
+
+      <Content>
+        <tr>
+          <td align="right" >P/L</td>
+          <td>123,123</td>
+        </tr>
+        <tr>
+          <td align="right" >D.YIELD</td>
+          <td>123,123</td>
+        </tr>
+        <tr>
+          <td align="right" >EBITDA</td>
+          <td>123,123</td>
+        </tr>
+        <tr>
+          <td align="right" >ROE</td>
+          <td>123,123</td>
+        </tr>
+        <tr>
+          <td align="right" >EV/EBIT</td>
+          <td>123,123</td>
+        </tr>
+      </Content>
+    </Container>
   );
 }
 

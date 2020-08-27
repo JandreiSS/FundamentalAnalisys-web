@@ -5,6 +5,8 @@ import { shade } from 'polished';
 
 import { Container } from './styles';
 
+import logoImg from '../../assets/logo.png';
+
 interface Props {
   toggleTheme(): void;
 }
@@ -15,7 +17,8 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <Container>
       {/* logotipo */}
-      Fundamental Analisys
+      {/* <img src={logoImg} alt="DataStock"/> */}
+      <h2>DataStock</h2>
 
       {/* Theme Switcher */}
       <Switch

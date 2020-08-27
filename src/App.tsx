@@ -8,9 +8,8 @@ import light from './styles/themes/light';
 import dark from './styles/themes/dark';
 
 import Header from './components/Header';
-import Board from './components/Board';
 
-// import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/Dashboard';
 // import SignIn from './pages/SignIn';
 
 import GlobalStyle from './styles/global';
@@ -26,7 +25,8 @@ const App: React.FC = () => {
     <DndProvider backend={HTML5Backend}>
       <ThemeProvider theme={theme}>
         <Header toggleTheme={toggleTheme}/>
-        <Board />
+        {/* <SignIn /> */}
+        <Dashboard />
         <GlobalStyle />
       </ThemeProvider>
     </DndProvider>

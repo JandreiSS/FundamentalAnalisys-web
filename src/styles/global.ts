@@ -13,9 +13,11 @@ export default createGlobalStyle`
   }
 
   body {
-  background: ${props => props.theme.colors.background};
+    background: ${props => props.theme.colors.background};
 
     color: ${props => props.theme.colors.text};
+
+    text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
   }
 
